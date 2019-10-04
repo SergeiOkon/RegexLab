@@ -1,5 +1,5 @@
 package com.regex.language;
 
-public interface regexParsable{
+public interface RegexParsable {
     public String parseByRegex(String text);
 }
