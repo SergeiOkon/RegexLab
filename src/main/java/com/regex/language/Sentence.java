@@ -1,8 +1,14 @@
 package com.regex.language;
 
-public class Sentence implements RegexParsable {
+public class Sentence {
+    private String sentence;
+
+    public Sentence(String sentence){
+        this.sentence = sentence;
+    }
+
     @Override
-    public String parseByRegex(String text) {
-        return null;
+    public String toString() {
+        return sentence;
     }
 }

@@ -1,9 +1,9 @@
-Chapter 1. Getting started with Spring
+Chapter 1. Getting started with Spring.
 
 This chapter covers:
-Spring and Spring Boot essentials
-Initializing a Spring project
-An overview of the Spring landscape
+Spring and Spring Boot essentials,
+Initializing a Spring project,
+An overview of the Spring landscape.
 
 Although the Greek philosopher Heraclitus wasn't well known as a software developer, he seemed to have a good handle on the subject.
 He has been quoted as saying, “The only constant is change.” That statement captures a foundational truth of software development.
