@@ -50,8 +50,7 @@ public class UserIOService {
     }
 
     private void showMakeUpText(List<Sentence> sentences){
-        for (int i = 0; i < sentences.size(); i++) {
-            System.out.print(sentences.get(i));
-        }
+        sentences.stream()
+                .forEach(System.out::println);
     }
 }
