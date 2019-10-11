@@ -1,6 +1,5 @@
 package com.regex.service;
 
-import com.regex.App;
 import com.regex.language.Sentence;
 
 import java.io.File;
@@ -10,6 +9,8 @@ import java.util.Scanner;
 
 public class UserIOService {
     private static String path;
+    private static int wordLength;
+
 
     private static Scanner scanner = new Scanner(System.in);
     private ModifyBookService modifyBookService = new ModifyBookService();
@@ -28,7 +29,7 @@ public class UserIOService {
     }
 
     private int scanUserWordLength() {
-        int wordLength = 0;
+        wordLength = 0;
 
         System.out.println("Type count of letters in words that start with consonant you want to delete:");
         try {

@@ -21,7 +21,6 @@ public class BookService {
     public String getBookText() {
         if(bookText == null){
             String bookPath = userIOService.scanBookPath();
-
             setBook(bookPath);
         }
         return bookText;

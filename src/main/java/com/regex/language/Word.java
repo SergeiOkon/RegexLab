@@ -1,7 +1,5 @@
 package com.regex.language;
 
-import com.regex.service.BookService;
-
 public class Word {
     private String word;
 
