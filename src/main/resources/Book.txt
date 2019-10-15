@@ -1,0 +1,39 @@
+Chapter 1. Getting started with Spring.
+
+This chapter covers:
+Spring and Spring Boot essentials,
+Initializing a Spring project,
+An overview of the Spring landscape.
+
+Although the Greek philosopher Heraclitus wasn't well known as a software developer, he seemed to have a good handle on the subject.
+He has been quoted as saying, “The only constant is change.” That statement captures a foundational truth of software development.
+The way we develop applications today is different than it was a year ago, 5 years ago, 10 years ago, and certainly 15 years ago,
+when an initial form of the Spring Framework was introduced in Rod Johnson’s book, Expert One-on-One J2EE Design and Development.
+Back then, the most common types of applications developed were browser-based web applications, backed by relational databases.
+While that type of development is still relevant, and Spring is well equipped for those kinds of applications,
+we’re now also interested in developing applications composed of microservices destined for the cloud that persist data
+in a variety of databases. And a new interest in reactive programming aims to provide greater scalability and improved performance
+with non-blocking operations.
+
+As software development evolved, the Spring Framework also changed to address modern development concerns, including microservices
+and reactive programming. Spring also set out to simplify its own development model by introducing Spring Boot.
+Whether you’re developing a simple database-backed web application or constructing a modern application built around microservices,
+Spring is the framework that will help you achieve your goals. This chapter is your first step in a journey through modern application development with Spring.
+
+1.1. What is Spring?
+I know you’re probably itching to start writing a Spring application, and I assure you that before this chapter ends,
+you’ll have developed a simple one. But first, let me set the stage with a few basic Spring concepts that will help you understand what makes Spring tick.
+Any non-trivial application is composed of many components, each responsible for its own piece of the overall application functionality,
+coordinating with the other application elements to get the job done. When the application is run, those components somehow need to be created and introduced to each other.
+At its core, Spring offers a container, often referred to as the Spring application context, that creates and manages application
+components. These components, or beans, are wired together inside the Spring application context to make a complete application,
+much like bricks, mortar, timber, nails, plumbing, and wiring are bound together to make a house.
+
+The act of wiring beans together is based on a pattern known as dependency injection (DI). Rather than have components create
+and maintain the lifecycle of other beans that they depend on, a dependency-injected application relies on a separate entity
+(the container) to create and maintain all components and inject those into the beans that need them. This is done typically
+through constructor arguments or property accessor methods.
+For example, suppose that among an application’s many components, there are two that you’ll address: an inventory service
+(for fetching inventory levels) and a product service (for providing basic product information).
+The product service depends on the inventory service to be able to provide a complete set of information about products.
+Figure 1.1 illustrates the relationships between these beans and the Spring application context.
